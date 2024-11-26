@@ -1,0 +1,2 @@
+recursive-include customizations/patches *
+recursive-include customizations/templates *

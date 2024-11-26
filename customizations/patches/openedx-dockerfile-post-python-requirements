@@ -1,0 +1,1 @@
+RUN pip install -e git+https://github.com/mitodl/edx-username-changer.git@main#egg=edx-username-changer
