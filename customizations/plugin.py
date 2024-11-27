@@ -6,6 +6,7 @@ from glob import glob
 import click
 import importlib_resources
 from tutor import hooks
+from tutormfe.hooks import MFE_APPS
 
 from .__about__ import __version__
 
@@ -227,3 +228,12 @@ for path in glob(str(importlib_resources.files("customizations") / "patches" / "
 
 # This would allow you to run:
 #   $ tutor customizations example-command
+
+# Remove select MFEs
+@MFE_APPS.add()
+def _remove_stock_mfes(mfes):
+    if ("course-authoring" in mfes):
+        mfes.pop("course-authoring")
+    if ("authoring" in mfes):
+        mfes.pop("authoring")
+    return mfes
