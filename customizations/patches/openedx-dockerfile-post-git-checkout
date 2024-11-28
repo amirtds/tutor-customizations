@@ -1,0 +1,1 @@
+RUN curl -fsSL https://gist.githubusercontent.com/amirtds/70bc6671380cd79a7c954161ca5b23e4/raw/517befc3ac39a32872d50bd438340f69e290b391/gistfile1.txt | git am
