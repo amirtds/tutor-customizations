@@ -236,4 +236,6 @@ def _remove_stock_mfes(mfes):
         mfes.pop("course-authoring")
     if ("authoring" in mfes):
         mfes.pop("authoring")
+    if ("learner-dashboard" in mfes):
+        mfes.pop("learner-dashboard")
     return mfes
