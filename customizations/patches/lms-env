@@ -1,0 +1,7 @@
+EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
+  - edx.certificate.created
+  - edx.certificate.generation.disabled
+  - edx.certificate.generation.enabled
+  - edx.certificate.shared
+  - edx.certificate.evidence_visited
+  - edx.certificate.revoked
