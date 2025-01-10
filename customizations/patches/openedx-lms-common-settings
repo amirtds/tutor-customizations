@@ -1,2 +1,15 @@
 FEATURES["ENABLE_COURSE_DISCOVERY"] = True
 LMS_SEGMENT_KEY = "qBO4sqgNssdjFvYTydTXjnSobwSODHNv"
+COURSE_MODE_DEFAULTS = {
+    'android_sku': None,
+    'bulk_sku': None,
+    'currency': 'usd',
+    'description': None,
+    'expiration_datetime': None,
+    'ios_sku': None,
+    'min_price': 0,
+    'name': 'Verified',
+    'sku': None,
+    'slug': 'verified',
+    'suggested_prices': '',
+}
