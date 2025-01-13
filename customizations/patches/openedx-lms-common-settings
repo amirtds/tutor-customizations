@@ -1,5 +1,8 @@
 FEATURES["ENABLE_COURSE_DISCOVERY"] = True
 FEATURES['ENABLE_LTI_PROVIDER'] = True
+if FEATURES.get('ENABLE_LTI_PROVIDER'):
+    INSTALLED_APPS.append('lms.djangoapps.lti_provider.apps.LtiProviderConfig')
+    AUTHENTICATION_BACKENDS.append('lms.djangoapps.lti_provider.users.LtiBackend')
 LMS_SEGMENT_KEY = "qBO4sqgNssdjFvYTydTXjnSobwSODHNv"
 COURSE_MODE_DEFAULTS = {
     'android_sku': None,
