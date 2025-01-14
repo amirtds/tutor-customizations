@@ -22,5 +22,12 @@ SESSION_COOKIE_SAMESITE_FORCE_ALL = True
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 
-# Allow embedding in iframes from your LTI consumer domain
-X_FRAME_OPTIONS = "ALLOW-FROM http://localhost:8000"  # Replace with your actual consumer domain
+# Modern approach for iframe embedding
+X_FRAME_OPTIONS = "ALLOW"
+SECURE_REFERRER_POLICY = "same-origin"
+CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
+
+# CORS settings for LTI
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = ['http://localhost:8000']
+FEATURES['ENABLE_CORS_HEADERS'] = True
