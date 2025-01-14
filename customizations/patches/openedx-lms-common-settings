@@ -14,3 +14,13 @@ COURSE_MODE_DEFAULTS = {
     'slug': 'verified',
     'suggested_prices': '',
 }
+
+# Needed for passing user session with the LTI Request
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE_FORCE_ALL = True
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+
+# Allow embedding in iframes from your LTI consumer domain
+X_FRAME_OPTIONS = "ALLOW-FROM http://localhost:8000"  # Replace with your actual consumer domain
