@@ -29,5 +29,5 @@ CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
 
 # CORS settings for LTI
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = ['http://localhost:8000']
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000', '*.cubite.io', '*.cubite.dev', '*.nce.center']
 FEATURES['ENABLE_CORS_HEADERS'] = True
