@@ -1,12 +1,5 @@
     handle_path /* {
         request_body {
-            max_size 1024MB
-        }
-        reverse_proxy /* localhost:8000 {
-            transport http {
-                response_header_timeout 5m
-                read_timeout 5m
-                write_timeout 5m
-            }
+            max_size 1GB
         }
     }
