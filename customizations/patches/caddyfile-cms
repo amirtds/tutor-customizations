@@ -1,5 +1,5 @@
     handle_path /* {
         request_body {
-            max_size 1000MB
+            max_size 1GB
         }
     }
