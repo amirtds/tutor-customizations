@@ -1,5 +1,11 @@
-    handle_path /* {
-        request_body {
-            max_size 1GB
-        }
+handle_path /* {
+    request_body {
+        max_size 1024MB
     }
+}
+
+handle_path /import/* {
+    request_body {
+        max_size 1024MB
+    }
+}
