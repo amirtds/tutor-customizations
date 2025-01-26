@@ -4,6 +4,8 @@ handle_path /* {
     }
 }
 
-handle /learner-dashboard/* {
-    redir https://disco.nce.center/dashboard permanent
+@dashboard_apps {
+    host apps.learn.disco.nce.center
+    path /learner-dashboard/*
 }
+redir @dashboard_apps https://disco.nce.center/dashboard permanent
