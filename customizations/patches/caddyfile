@@ -4,7 +4,6 @@ handle_path /* {
     }
 }
 
-@dashboard {
-    path /learner-dashboard/*
+handle /learner-dashboard/* {
+    redir https://disco.nce.center/dashboard permanent
 }
-redir @dashboard https://disco.nce.center/dashboard permanent
