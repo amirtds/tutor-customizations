@@ -1,1 +1,0 @@
-RUN curl -fsSL https://raw.githubusercontent.com/amirtds/edx-platform-patches/main/lti-auth-customization.patch | git am

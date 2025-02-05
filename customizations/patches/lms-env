@@ -1,9 +1,5 @@
-EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
-  - edx.certificate.created
-  - edx.certificate.generation.disabled
-  - edx.certificate.generation.enabled
-  - edx.certificate.shared
-  - edx.certificate.evidence_visited
-  - edx.certificate.revoked
-
-SESSION_COOKIE_DOMAIN: ".disco.nce.center"
+ENABLE_BULK_ENROLLMENT_VIEW: true
+REGISTRATION_EXTRA_FIELDS:
+  gender: "required"
+  level_of_education: "required"
+  year_of_birth: "required"

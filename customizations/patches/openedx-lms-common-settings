@@ -1,6 +1,21 @@
-FEATURES["ENABLE_COURSE_DISCOVERY"] = True
-FEATURES['ENABLE_LTI_PROVIDER'] = True
-LMS_SEGMENT_KEY = "qBO4sqgNssdjFvYTydTXjnSobwSODHNv"
+HOMEPAGE_COURSE_MAX = 6
+BUGS_EMAIL = "academix@iranacademia.education"
+BULK_EMAIL_DEFAULT_FROM_EMAIL = "academix@iranacademia.education"
+BULK_EMAIL_EMAILS_PER_TASK = 10000
+CONTACT_EMAIL = "academix@iranacademia.education"
+CONTACT_MAILING_ADDRESS = "academix@iranacademia.education"
+COURSE_ABOUT_VISIBILITY_PERMISSION = "see_exists"
+DEFAULT_COURSE_VISIBILITY_IN_CATALOG = "both"
+DEFAULT_FEEDBACK_EMAIL = "academix@iranacademia.education"
+DEFAULT_FROM_EMAIL = "academix@iranacademia.education"
+DEFAULT_MOBILE_AVAILABLE = True
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+CERT_NAME_SHORT = "گواهی"
+COURSE_DISCOVERY_FILTERS = ["org", "language"]
+ENABLE_DYNAMIC_REGISTRATION_FIELDS = True
+FEATURES["ENABLE_COURSE_DISCOVERY"] = False
+FEATURES["ENABLE_COURSEWARE_SEARCH"] = True
+FEATURES["ENABLE_DASHBOARD_SEARCH"] = True
 COURSE_MODE_DEFAULTS = {
     'android_sku': None,
     'bulk_sku': None,
@@ -14,21 +29,19 @@ COURSE_MODE_DEFAULTS = {
     'slug': 'verified',
     'suggested_prices': '',
 }
-
-# Needed for passing user session with the LTI Request
-SESSION_COOKIE_SAMESITE = 'None'
-SESSION_COOKIE_SECURE = True
-SESSION_COOKIE_SAMESITE_FORCE_ALL = True
-CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_SAMESITE = 'None'
-
-# Modern approach for iframe embedding
-X_FRAME_OPTIONS = "ALLOW"
-SECURE_REFERRER_POLICY = "same-origin"
-CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
-
-# CORS settings for LTI
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = ['http://ncec.localhost:3000', 'http://localhost:3000', 'https://ncec.cubite.io', 'https://ncec.cubite.dev', 'https://ncec.center', "https://lms.disco.nce.center", "https://disco.nce.center", "https://learn.disco.ncec.center", "https://studio.disco.ncec.center", "https://www.disco.ncec.center"]
-FEATURES['ENABLE_CORS_HEADERS'] = True
-
+COURSE_DISCOVERY_MEANINGS = {
+    "org": {
+        "name": "برگزار کننده",
+        "terms":{
+            "IranAcademia": "ایران آکادمیا",
+            "IranAacademia": "ایران آکادمیا"
+        }
+    },
+    "language": {
+        "name": "زبان",
+        "terms": {
+            "fa": "فارسی",
+            "en": "انگلیسی"
+        }
+    },
+} 
