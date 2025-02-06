@@ -1,1 +1,0 @@
-RUN pip install -e git+https://github.com/Annoto/xblock-in-video-collaboration.git
