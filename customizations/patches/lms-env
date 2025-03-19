@@ -5,5 +5,7 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   - edx.certificate.shared
   - edx.certificate.evidence_visited
   - edx.certificate.revoked
+  - problem_check
+  - problem_check_fail
 
 SESSION_COOKIE_DOMAIN: ".disco.nce.center"
