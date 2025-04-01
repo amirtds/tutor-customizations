@@ -1,1 +1,1 @@
-RUN npm install '@edx/brand@git+https://github.com/amirtds/brand-openedx.git#14393191e20a898db24ea4592570f3fc19028879'
+RUN npm install '@edx/brand@git+https://github.com/amirtds/brand-openedx.git#1136437ff4f6468c69a9d6086eec55461d6a0572'
