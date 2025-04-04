@@ -1,2 +1,2 @@
 MAX_ASSET_UPLOAD_FILE_SIZE_IN_MB = 800
-SESSION_COOKIE_DOMAIN: ".disco.nce.center"
+SESSION_COOKIE_DOMAIN: ".foodsafety.center"

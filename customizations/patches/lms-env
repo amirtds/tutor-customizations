@@ -8,4 +8,4 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   - problem_check
   - problem_check_fail
 
-SESSION_COOKIE_DOMAIN: ".disco.nce.center"
+SESSION_COOKIE_DOMAIN: ".foodsafety.center"

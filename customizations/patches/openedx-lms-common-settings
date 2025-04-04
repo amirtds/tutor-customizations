@@ -29,6 +29,6 @@ CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
 
 # CORS settings for LTI
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = ['http://ncec.localhost:3000', 'http://localhost:3000', 'https://ncec.cubite.io', 'https://ncec.cubite.dev', 'https://ncec.center', "https://lms.disco.nce.center", "https://disco.nce.center", "https://learn.disco.ncec.center", "https://studio.disco.ncec.center", "https://www.disco.ncec.center", "https://cubite.io", "https://edadmin.itserver.cloud"]
+CORS_ORIGIN_WHITELIST = ['http://foodsafety.localhost:3000', 'http://localhost:3000', 'https://foodsafety.cubite.io', 'https://foodsafety.cubite.dev', 'https://foodsafety.center', "https://lms.foodsafety.center", "https://foodsafety.center", "https://learn.foodsafety.center", "https://studio.foodsafety.center", "https://www.foodsafety.center", "https://cubite.io", "https://edadmin.itserver.cloud"]
 FEATURES['ENABLE_CORS_HEADERS'] = True
 
